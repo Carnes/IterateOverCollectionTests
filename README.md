@@ -8,3 +8,5 @@ Summary:  Using a List and for loop is fastest.  Adding an object pool will slig
 ![image](https://user-images.githubusercontent.com/1475235/145747482-b6cba51c-e554-4f3a-8b95-b0be7f49e08e.png)
 
 ![image](https://user-images.githubusercontent.com/1475235/145747530-15d6d71d-040d-4815-8bd2-659ef775dd87.png)
+
+Looking at the dotTrace graph the List and for loop looks really good because it's less than 5% of the GC but that's only because the foreach loop is so bad.  When running dotTrace for just the ListAndForLoop with and without object pooling it shows 100% of GCs and memory allocations going to without a pool.  183 GCs vs 0 in a ~10 second period.  Object pooling look very worth doing for short duration classes like projectiles, ai tasks, naviation tasks, and so on.
