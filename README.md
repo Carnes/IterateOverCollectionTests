@@ -1,4 +1,4 @@
-# IterateOverQueueTests
+# IterateOverCollectionTests
 Used for testing different methods of iterating over a collection that has items periodically added and removed
 
 ![image](https://user-images.githubusercontent.com/1475235/145747331-28541db1-10c2-478f-a3c9-bd8efcf0d3ba.png)
