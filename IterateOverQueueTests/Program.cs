@@ -18,6 +18,7 @@ namespace IterateOverQueueTests
             var testCases = new List<ITestCase>
             {
                 new ListAndForeach(),
+                new ListAndLinqForEach(),
                 new ListAndForLoop(),
                 new ListAndForLoopAndPool(),
             };
